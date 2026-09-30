@@ -1,7 +1,7 @@
 *************************************************************************
 Project Name: Munroe - Fluid Analysis
 Written by: Emily Walzl
-Date: August 3rd, 2026
+Date: September 9th, 2026
 
 BIG UPDATE FROM ORIGINAL PROJECT
 NOW JUST FOCUSING ON BALANCED FLUID MEASURE, NO LONGER INCLUDING PORTION OF ANALYSIS RELATING TO 30 MLKG MEASURE
@@ -41,21 +41,15 @@ This Code:
 
 
 Study Flow (Similar outline for both Aims 1 and 2):
-- Figure 1: Variation in fluid volume (aim 1) in patients with sepsis across Michigan hospitals
-- Table 1.1: Compliance with 30ml/kg measure across primary and sensitivity analysis populations
-- Table 1.2: Comparing patient characteristics between patients who received ≥30ml/kg vs <30ml/kg actual body weight within 6 hours (Primary analysis population) 
-- Table 1.3: Characteristics  of hospitals participating in HMS-sepsis cohort (Primary analysis population) 
-- Table 1.4: Patient characteristics associated with receiving ≥30ml/kg (Primary Analysis)
-- Table 1.5: Hospital level variation in receiving ≥30ml/kg across sensitivity analysis 
-- Table 1.6:  Association of receiving ≥30ml/kg with 30-day mortality (aim 3)
-- Figure 2: Variation in fluid type (aim 2) in patients with sepsis across Michigan hospitals
-- Table 2.1: Compliance with balanced fluid measure measure across primary and sensitivity analysis population
-- Table 2.2: Comparing patient characteristics between patients who received ≥75% balanced fluid vs those who did not (Primary analysis population) 
-- Table 2.3: Characteristics of hospitals participating in HMS-sepsis cohort (Primary analysis population) 
-- Table 2.4: Patient characteristics associated with receiving ≥75% balanced fluid (Primary Analysis population)
-- Table 2.5: Hospital level variation in receiving ≥75% balanced across sensitivity analysis 
-- Table 2.6: Association of receiving ≥75% balanced fluid with 30-day mortality (aim 3)
-
+- Figure 1a: Study Flow Diagram 
+- Figure 1b: histogram showing % balanced solution, among 48-hour cohort (N=58,073)
+- Figure 1c: histogram showing % balances solution, among 6-hour cohort (N=46,960)
+- Figure 2: Graphs of type of fluid delivered among patients receiving <75% and ≥75% balanced fluid 
+- Table 1 (Formerly Table 2.2). Comparing patient characteristics between patients who received ≥75% balanced fluid vs those who did not at 48 hours and 6 hours 
+- Table 2 (Formerly table 2.6). Association of receiving ≥75% balanced fluid with 30-day mortality 
+- Table 3. Secondary outcomes Association of receiving ≥75% balanced fluid with secondary outcomes  
+- Table 4: Association with % balanced (CATEGORICAL VARIABLE) and 30-day mortality
+- Table 5: Association with % balanced (CATEGORICAL VARIABLE, 25% intervals) and 30-day mortality
 
 Outcomes:
     Primary outcome: 30-day mortality (from date of presentation)
