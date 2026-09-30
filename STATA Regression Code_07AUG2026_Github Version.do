@@ -1,38 +1,49 @@
-/* Project Name: Munroe - Fluid Analysis
-	Written by: Emily Walzl
-	Date: November 6, 2025 */
+/*************************************************************************
+Project Name: Munroe - Fluid Analysis
+Written by: Emily Walzl
+Date: September 9th, 2026
+
+BIG UPDATE FROM ORIGINAL PROJECT
+NOW JUST FOCUSING ON BALANCED FLUID MEASURE, NO LONGER INCLUDING PORTION OF ANALYSIS RELATING TO 30 MLKG MEASURE
+Aims:
+Aim 1: Understand the association between receiving a majority balanced fluid overall (48 hours) and early resuscitation (6 hours) and clinical outcomes 
+Aim 2: Evaluate the effect of receiving a majority balanced fluid and mortality across key subgroups based on septic shock, illness severity
+
+
+Research Question:
+This analysis plan builds on the balanced fluid analysis completed by Emily Walzl and team in 2025. This research plan focused the question to evaluate whether receiving a majority
+balanced fluid during resuscitation is associated with mortality, both overall (48 hours) and in early resuscitation. 
+
+
+Inputs:
+1. Sepsis data cut (MOST RECENT DATACUT)
+
+
+Primary analysis (overall resuscitation): All patients who receive at least 1L of fluid within 48 hours  
+
+Secondary analysis (early resuscitation): All patients who receive at least 1L of fluid within 6 hours 
+
+Subgroups: (based on a priori hypotheses and FISSH results) 
+1.	Septic shock (on intravenous vasopressor within 2 hrs of presentation and first lactate >2 mmol/L, limit to lactate drawn within 6 hours) -> KEY subgroup
+a.	Based on Sepsis-3 definition of septic shock: requiring vasopressors and lactate >2 
+2.	Initiated on intravenous vasopressor within 2 hours of arrival  
+3.	Hypotensive within 2 hours of (SBP <90, MAP <65, or on vasopressors)
+4.	First lactate ≥4 mmol/L (with or without hypotension) limit to lactate drawn within 6 hours
+5.	First lactate 2-4 mmol/L and no hypotension (intermediate lactate population), limit to lactate drawn within 6 hours
+6.	AKI at presentation. Use initial creatinine and existing HMS measure for AKI present on presentation (use creatinine value used in mortality model)
+7.	Age ≥65 years old  
+
+
+Outcomes:
+    Primary outcome: 30-day mortality (from date of presentation)
+
+    Secondary outcomes:
+    A.	In hospital mortality or hospice discharge (died in hospital or discharged to hospice)
+    B.	Hospital length of stay
+    C.	Ever renal replacement therapy (RRT): required RRT during admission
+
 	
-	
-/* Mortality Regression Models for Primary and Sensitivity Analyses */
-/* Outcome of Interest: 30-day Mortality */
-/* Predictor of Interest: Fluid by weight (using various methods - Sep-1 Approach, Pragmatic Approach, and Tailored Approach) */
-/* Model Adjustment Variables: 
-								Age
-								Sex  
-								BMI 
-								Admission from SNF/SAR/LTAC
-								Hospitalization in prior 90-days
-								Mod/Severe kidney disease   
-								Mod/Severe liver disease
-								CHF
-								Malignancy 
-								Predicted mortality continuous
-								Initial lactatea
-								Initial creatinineb
-								PaO2: FiO2 ratioc,
-								Mechanical ventilation in 6 hours
-								Vasopressors in 6 hours 
-								AMS on presentation
-								Charlson score  continuous or categorical; leave up to Emily
-								Highest Temp first 3 hours categorical 
-								Lowest SBP first 3 hours  categorical
-								Highest RR first 3 hours  categorical
-								Highest HR first 3 hours  categorical
-								Highest WBC 
-								Highest bilirubind
-								Lowest plateletsd */
-/* Random Effect for Hospital Used */
-/* IPTW (calculated in SAS for each model) used for weighting */
+**************************************************************************/
 
 
 /****************************************************************************************************/
